@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="ohtuesimerkki.StatisticsTest" tests="5" skipped="0" failures="0" errors="0" timestamp="2019-10-30T12:57:33" hostname="alisa-lenovo" time="4.184">
+  <properties/>
+  <testcase name="findsPlayerOnList" classname="ohtuesimerkki.StatisticsTest" time="1.756"/>
+  <testcase name="doesNotFindPlayersOnNonexistentTeam" classname="ohtuesimerkki.StatisticsTest" time="0.575"/>
+  <testcase name="returnsThreeTopScorers" classname="ohtuesimerkki.StatisticsTest" time="0.495"/>
+  <testcase name="doesNotFindPlayerNotOnList" classname="ohtuesimerkki.StatisticsTest" time="0.649"/>
+  <testcase name="returnsPlayersOnTeam" classname="ohtuesimerkki.StatisticsTest" time="0.707"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>
