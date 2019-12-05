@@ -27,6 +27,11 @@ public class QueryBuilder {
         return this;
     }
 
+    public QueryBuilder oneOf(Matcher... matchers) {
+        this.stack.push(new Or(matchers));
+        return this;
+    }
+
     public Matcher build() {
         Matcher[] matchers = new Matcher[stack.size()];
         for (int i = 0; i < matchers.length; i++) {
