@@ -11,6 +11,7 @@ public class Main {
 
         Statistics stats = new Statistics(new PlayerReaderImpl(url));
 
+        /*
         Matcher m = new And(
                 new HasAtLeast(20, "points"),
                 new Or(
@@ -19,11 +20,17 @@ public class Main {
                         new PlaysIn("NJD")
                 )
         );
+        */
+        QueryBuilder query = new QueryBuilder();
 
+        Matcher m = query.playsIn("NYR")
+                .hasAtLeast(5, "goals")
+                .hasFewerThan(10, "goals").build();
 
         for (Player player : stats.matches(m)) {
-            System.out.println(player);
+            System.out.println( player );
         }
+
 
 
     }
